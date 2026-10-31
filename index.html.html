@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070b18">
+<title>Erwin Kusaeni — Personal Portfolio & CV</title>
+<style>
+:root{--bg:#070b18;--panel:#0e1730;--panel2:#111e3d;--line:rgba(150,180,255,.16);--text:#eef4ff;--muted:#9eacc8;--blue:#3d8bff;--cyan:#62d5ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% 15%,#10234b 0,transparent 38%),radial-gradient(ellipse at 10% 70%,#0b1c3b 0,transparent 34%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif;line-height:1.6}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;background-image:radial-gradient(#9ac8ff 1px,transparent 1px),radial-gradient(#fff 1px,transparent 1px);background-size:83px 83px,137px 137px;background-position:0 0,35px 60px}
+a{color:inherit;text-decoration:none}.wrap{width:min(1080px,92%);margin:auto}.nav{position:sticky;top:12px;z-index:5;margin:14px auto 0;width:min(720px,92%);display:flex;justify-content:center;gap:6px;padding:7px;background:#0b1225d9;border:1px solid var(--line);border-radius:30px;backdrop-filter:blur(16px);box-shadow:0 12px 40px #0005}.nav a{font-size:12px;color:#c2cde2;padding:8px 13px;border-radius:20px}.nav a:hover{background:#1a2c51;color:white}
+.hero{min-height:570px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:30px;padding:65px 0 50px}.eyebrow{color:var(--cyan);font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700}.hero h1{font-size:clamp(42px,7vw,70px);line-height:1.04;letter-spacing:-2.8px;margin:14px 0}.hero h1 span{color:#55a2ff}.lead{max-width:550px;color:var(--muted);font-size:15px}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;border-radius:10px;font-size:13px;font-weight:700;border:1px solid var(--line);background:#111e3d;cursor:pointer}.btn.primary{background:linear-gradient(110deg,#2478ed,#3ca8ff);border:0;color:white;box-shadow:0 8px 25px #1676ff44}.hero-art{display:flex;justify-content:center;position:relative}.portrait{width:min(280px,75vw);aspect-ratio:4/5;border-radius:24px;border:1px solid #6aaeff55;background:linear-gradient(145deg,#1b3d72,#0d1730 65%);box-shadow:0 25px 80px #0008;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.portrait:before{content:"";position:absolute;width:250px;height:250px;border-radius:50%;background:#348cff33;filter:blur(35px);top:15px}.avatar{width:145px;height:145px;border-radius:50%;border:2px solid #7bc9ff;display:grid;place-items:center;font-size:48px;font-weight:800;background:linear-gradient(145deg,#1a4b83,#101b36);z-index:1}.portrait small{position:absolute;bottom:23px;color:#a9c8ed;letter-spacing:2px;font-size:10px}.float{position:absolute;right:-3px;top:50px;background:#101d39;border:1px solid var(--line);border-radius:12px;padding:12px 15px;font-size:11px;box-shadow:0 10px 35px #0008}.float b{display:block;color:#70c5ff;font-size:15px}
+section{padding:55px 0;scroll-margin-top:85px}.section-head{text-align:center;margin-bottom:28px}.section-head .eyebrow{font-size:10px}.section-head h2{font-size:30px;margin:5px 0}.section-head p{color:var(--muted);font-size:13px;margin:0}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.card{background:linear-gradient(145deg,#101a32eF,#0b1328f2);border:1px solid var(--line);border-radius:17px;padding:22px;box-shadow:0 15px 45px #0002}.card h3{margin:0 0 8px;font-size:17px}.card p{color:var(--muted);font-size:13px;margin:0}.timeline{display:grid;gap:13px}.job{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:start}.job .date{font-size:11px;color:#77c5ff;border:1px solid #3b83c955;padding:4px 9px;border-radius:20px;white-space:nowrap}.job h3{margin:0;font-size:15px}.job .company{color:#73baff;font-size:12px;margin:2px 0 7px}.job p{font-size:12px;color:var(--muted);margin:0}.job ul{margin:8px 0 0 16px;padding:0;color:var(--muted);font-size:12px}.job li{margin-bottom:4px}.chips{display:flex;flex-wrap:wrap;gap:9px}.chip{font-size:12px;color:#d9e9ff;background:#142447;border:1px solid #31517f88;border-radius:9px;padding:9px 12px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:15px}.stat{text-align:center;padding:17px 8px;background:#101d39;border:1px solid var(--line);border-radius:14px}.stat b{font-size:27px;color:#70baff;display:block}.stat span{font-size:11px;color:var(--muted)}.contact{text-align:center}.contact .card{max-width:650px;margin:auto}.contact-links{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}.footer{text-align:center;color:#71809e;font-size:11px;padding:28px 0 40px}.note{font-size:11px;color:#8192b2;margin-top:18px}
+@media(max-width:700px){.nav{justify-content:flex-start;overflow:auto}.nav a{white-space:nowrap;padding:8px 11px}.hero{grid-template-columns:1fr;text-align:center;padding-top:65px;gap:30px}.hero .lead{margin:auto}.actions{justify-content:center}.hero-art{grid-row:1}.portrait{width:210px}.avatar{width:115px;height:115px;font-size:38px}.float{right:calc(50% - 145px)}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr 1fr}.job{grid-template-columns:1fr}.job .date{justify-self:start}.hero h1{letter-spacing:-1.5px}}
+@media print{body{background:#fff;color:#111}.nav,.actions,.hero-art,.footer{display:none}.hero{min-height:0;padding:20px 0}.lead,.card p,.section-head p{color:#333}.card{background:#fff;border:1px solid #ccc;box-shadow:none;break-inside:avoid}section{padding:20px 0}.eyebrow,.hero h1 span,.job .company{color:#145aa5}.chip{color:#111;background:#eee}}
+</style>
+</head>
+<body>
+<nav class="nav">
+<a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+</nav>
+<main class="wrap">
+<header class="hero" id="home">
+<div>
+<div class="eyebrow">Personal Portfolio · Curriculum Vitae</div>
+<h1>Welcome to<br>My <span>Portfolio.</span></h1>
+<p class="lead">Halo, saya <strong><em>Erwin Kusaeni</em></strong>.Lulusan SMK jurusan multimedia dan Seorang yang adaptif dan teliti dengan rekam jejak terbukti di bidang administrasi digital, operasional lapangan, keuangan, dan manajemen fasilitas. Terbiasa bekerja secara terstruktur, solutif, dan siap memberikan kontribusi optimal untuk mendukung produktivitas perusahaan.</p>
+<div class="actions">
+  <a class="btn primary" href="#experience">Lihat Pengalaman ↗</a>
+  <a class="btn" href="#contact">Hubungi Saya</a>
+  <button class="btn" onclick="window.print()">Cetak / Simpan PDF</button>
+</div>
+</div>
+<div class="hero-art">
+  <div class="portrait">
+    <div class="avatar">EK</div>
+    <small>ERWIN KUSAENI</small>
+  </div>
+  <div class="float"><b>Open to work</b>Siap Bergabung</div>
+</div>
+</header>
+
+<section id="about">
+<div class="section-head">
+  <div class="eyebrow">Get to know me</div>
+  <h2>About Me</h2>
+  <p>Profil singkat dan nilai tambah profesional saya.</p>
+</div>
+<div class="grid">
+<div class="card">
+  <h3>👋 Perkenalkan</h3>
+  <p>Saya adalah individu yang memiliki rekam jejak kerja lintas bidang profesional. Mengombinasikan ketelitian data yang tinggi, kepatuhan terhadap SOP, serta kemampuan adaptasi yang gesit untuk mencapai target organisasi, baik secara mandiri maupun dalam tim."</p>
+</div>
+<div class="card">
+  <h3>⭐ Keunggulan Saya</h3>
+  <p>Mampu beradaptasi dengan lingkungan dan tugas baru, memiliki pengalaman lintas bidang, bertanggung jawab dalam pekerjaan, serta memiliki kemauan belajar dan berkembang. Saya terbiasa bekerja secara terstruktur berorientasi pada pelayanan, target dan kualitas.</p>
+</div>
+</div>
+</section>
+
+<section id="experience">
+<div class="section-head">
+  <div class="eyebrow">My journey</div>
+  <h2>Work Experience</h2>
+  <p>Riwayat pekerjaan dan tanggung jawab yang pernah diemban.</p>
+</div>
+<div class="timeline">
+  
+  <div class="card job">
+    <div>
+      <h3>Admin Online</h3>
+      <div class="company">CV Niaga Kita · Prembun</div>
+      <p>Bertanggung jawab penuh atas operasional administratif berbasis digital:</p>
+      <ul>
+        <li>Mengelola pemesanan dan pendataan transaksi online secara berkala.</li>
+        <li>Berkomunikasi secara aktif dengan pelanggan untuk memastikan kepuasan layanan.</li>
+      </ul>
+    </div>
+    <span class="date">6 Bulan</span>
+  </div>
+
+  <div class="card job">
+    <div>
+      <h3>Field Staff</h3>
+      <div class="company">PT AMF</div>
+      <p>Menangani tugas-tugas operasional langsung di lapangan:</p>
+      <ul>
+        <li>Memastikan kelancaran proses kerja di lapangan sesuai SOP perusahaan.</li>
+        <li>Menyelesaikan kendala operasional secara taktis dan efisien.</li>
+      </ul>
+    </div>
+    <span class="date">18 Bulan</span>
+  </div>
+
+  <div class="card job">
+    <div>
+      <h3>Finance & Retail Elektronik</h3>
+      <div class="company">Pengalaman Retail & Keuangan</div>
+      <p>Mengelola transaksi keuangan harian, pembukuan dasar, serta melayani pelanggan retail produk elektronik dengan informatif dan ramah.</p>
+    </div>
+    <span class="date">6 bulan</span>
+  </div>
+
+  <div class="card job">
+    <div>
+      <h3>Housekeeping</h3>
+      <div class="company">Hotel · Yogyakarta</div>
+      <p>Menjaga kebersihan, kerapian, serta kenyamanan fasilitas hotel sesuai dengan standar operasional prosedur kebersihan perhotelan yang ketat.</p>
+    </div>
+    <span class="date">3 bulan</span>
+  </div>
+
+   <div class="card job">
+    <div>
+      <h3>Freelance Fotografi</h3>
+      <div class="company">Kraton Lightbos Fotografi</div>
+      <p>membantu Fotografer utama dalam melakukan kegiatan mulai dari menyiapkan peralatan dan penyusunan set up sampai melakukan cover Fotografer utama.</p>
+    </div>
+    <span class="date">Profesional</span>
+  </div>
+
+</div>
+</section>
+
+<section id="skills">
+<div class="section-head">
+  <div class="eyebrow">What I can do</div>
+  <h2>Skills & Strengths</h2>
+  <p>Kompetensi inti yang mendukung produktivitas kerja.</p>
+</div>
+<div class="card" style="margin-bottom: 15px;">
+  <div class="chips">
+    <span class="chip">Administrasi dan pengolahan data</span>
+    <span class="chip">Operasional Lapangan</span>
+    <span class="chip">Komunikasi & Kerja Sama Tim</span>
+    <span class="chip">Pelayanan</span>
+    <span class="chip">Perawatan Fasilitas</span>
+    <span class="chip">Komunikasi Efektif</span>
+    <span class="chip">Adaptasi Tinggi</span>
+    <span class="chip">Problem Solving</span>
+    <span class="chip">Adaptasi dan Manajemen Waktu</span>
+  </div>
+</div>
+<div class="stats">
+  <div class="stat"><b>5+</b><span>Bidang Keahlian</span></div>
+  <div class="stat"><b>24 Bln</b><span>Pengalaman Terstruktur</span></div>
+  <div class="stat"><b>100%</b><span>Dedikasi Kerja</span></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="section-head">
+  <div class="eyebrow">Let's connect</div>
+  <h2>Hubungi Saya</h2>
+  <p>Terbuka untuk diskusi kesempatan kerja sama atau wawancara.</p>
+</div>
+<div class="card">
+  <h3>Erwin Kusaeni</h3>
+  <p>Silakan hubungi saya melalui kontak di bawah ini untuk informasi lebih lanjut mengenai CV atau jadwal wawancara.</p>
+  
+  <div class="contact-links">
+    <!-- Ganti emailanda@example.com dengan email asli Anda -->
+   <a class="btn primary" href="https://mail.google.com/mail/?view=cm&fs=1&to=erwinkus2303@gmail.com" target="_blank">✉ Kirim Email</a>
+    
+    <!-- Ganti 628xxxxxxxxxx dengan nomor WhatsApp Anda (format: 628...) -->
+    <a class="btn" href="https://wa.me/6282327231933?text=Halo%20Erwin,%20saya%20melihat%20CV%20web%20Anda..." target="_blank">💬 WhatsApp</a>
+    
+    <a class="btn" href="#home">Kembali ke atas ↑</a>
+  </div>
+  
+  <div class="note">Dream it. Wish it. Do it</div>
+</div>
+</section>
+
+<footer class="footer">© <span id="year"></span> Erwin Kusaeni · Personal Portfolio & CV</footer>
+</main>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
